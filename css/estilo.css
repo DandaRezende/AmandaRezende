@@ -1,0 +1,304 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    background-color: #000;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-inline-start: 100px;
+    padding-inline-end: 80px;
+    font-size: large;
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+header{
+    padding: 40px 4%;
+    align-items: center;
+    align-content: center;
+    display: flex;  
+    justify-content: space-between; 
+}
+header > .interface{
+    align-items:center;
+}
+header .interface{
+    display: flex;
+}
+#menu-pras {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.menu-pra a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    list-style-type: none;
+    transition: .2s;
+    margin-right: 10px;
+}
+.menu-pra a:hover{
+    color: #ffff;
+    transform:scale(1.05);
+}
+.logo img{
+    width: 70%;
+    height: auto;
+}
+
+.btn-social button, .btn-cv button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(147, 70%, 55%);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;    
+}
+.btn-cv button{
+    justify-content: center;
+}
+.btn-contato {
+    margin-left: 100px;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: hsl(147, 70%, 55%);
+    border:0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-iefp button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: hsl(147, 70%, 55%);
+    border:0;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px opx 8px hsl(147, 70%, 55%);
+    transform: scale(1.05) ;
+    transition: 1.2s;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  
+}
+.topo-do-site h1, footer h2{
+    color: #ffff;
+    font-size: 42px;
+    line-height: 40px;
+    text-align: center;
+}
+.topo-do-site h1 span, footer h2 span{
+    color: hsl(147, 70%, 55%);
+}
+.topo-do-site .txt-topo-site p{
+    color: #ffff;
+    margin:40px 0;
+    text-align: justify;
+}
+.topo-do-site .txt-topo-site p span{
+    color: hsl(147, 70%, 55%);
+    font-size: large;
+    font-weight: 600;
+}
+.topo-do-site .img-topo-site img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.aplicacoes{
+    padding: 40px 4%;
+}
+section.aplicacoes .flex{
+    gap: 60px;
+}
+.aplicacoes .aplicacoes-box{
+    color: #ffff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.aplicacoes .aplicacoes-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffffb7;    
+}
+.aplicacoes .aplicacoes-box i{
+    font-size: 70px;
+    color: hsl(147, 70%, 55%);
+}
+.aplicacoes .aplicacoes-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+h2.titulo{
+    color:#ffff;
+    font-size: 34px;
+    text-align: center;
+}
+h2.titulo span{
+    color: hsl(147, 70%, 55%);
+}
+section.sobre{
+    padding: 10px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre .txt-sobre{
+    color:#ffff;
+    padding: 10px;    
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+section.PRA{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff24;
+}
+.img-pra{
+    width:360px;
+    height: 460px;
+    background-color: hsl(147, 70%, 55%);
+}
+section.PRA .flex{
+    justify-content: space-around;
+}
+section.formulario{
+    padding:80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #43424263;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffff;
+    font-size: 18px;
+}
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center; 
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: hsl(147, 70%, 55%);
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;       
+}
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff24;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px;
+}
+.borda{
+    border-top: 2px solid hsl(147, 70%, 55%);
+}
+footer .line-footer p i{
+    color: hsl(147, 70%, 55%);
+    font-size: 22px;
+    border: 25px;
+}
+footer .line-footer p a{
+    color: #ffff;
+    padding-left: 10px;
+}
+.c{
+    color: #ffff;
+}
+.aside a{
+    margin-top: 100px;
+    position:fixed;
+    Left: -155px;
+    transition: 0.2s;
+    padding: 10px;
+    width: 180px;
+    text-decoration:none;
+    font-size:20px;
+    color: #030303;
+    border-radius:0 15px 15px 0;
+    background-color: #030303;
+    text-align: right;
+    font-weight: 700;
+    background-color: hsl(147, 70%, 55%);
+}
+.aside a:hover{
+    left:-32px;
+}
+#link-inicio{
+    top:20px;
+}
+#link-projetos{
+    top:90px;
+}
+#link-historia{
+    top:160px;
+}
+#link-PRA{
+    top:230px;
+}
+#link-cv{
+    top:300px;
+}
+#link-contato{
+    top:370px;
+}
+
+
