@@ -122,15 +122,15 @@ section.topo-do-site .flex{
     }
 }
 
-section.aplicacoes{
+section.projetos{
     padding: 40px 4%;
     margin-top: 25px;
 }
-section.aplicacoes .flex{
+section.projetos .flex{
     gap: 60px;
     margin: 100px 0 100px 0;
 }
-.aplicacoes .aplicacoes-box{
+.projetos .projetos-box{
     color: #ffff;
     padding: 40px;
     margin-top: 45px;
@@ -138,15 +138,15 @@ section.aplicacoes .flex{
     margin-top: 45px;
     transition: .2s;
 }
-.aplicacoes .aplicacoes-box:hover{
+.projetos .projetos-box:hover{
     transform: scale(1.05);
     box-shadow: 0 0 20px #ffffffb7;    
 }
-.aplicacoes .aplicacoes-box i{
+.projetos .projetos-box i{
     font-size: 70px;
     color: hsl(147, 70%, 55%);
 }
-.aplicacoes .aplicacoes-box h3{
+.projetos .projetos-box h3{
     font-size: 28px;
     margin: 15px 0;
 }
